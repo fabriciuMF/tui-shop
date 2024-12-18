@@ -15,7 +15,7 @@
 				<div class="col-md-7 p-2">
 					<div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
 						<div class="card-header text-center">
-							<p class="fs-4 text-center">Register</p>
+							<p class="fs-4 text-center sub-title">Register</p>
 							<th:block th:if="${session.succMsg}">
 								<p class="text-success fw-bold">[[${session.succMsg}]]</p>
 								<th:block th:text="${@commnServiceImpl.removeSessionMessage()}"></th:block>
@@ -98,10 +98,6 @@
 								</div>
 
 
-
-
-
-
 								<button type="submit"
 									class="btn bg-primary text-white col-md-12">Register</button>
 							</form>
@@ -109,7 +105,7 @@
 
 						<div class="card-footer text-center">
 
-							have an account ? <a href="/login" class="text-decoration-none">Login
+							have an account ? <a href="/signin" class="text-decoration-none">Login
 							</a>
 						</div>
 					</div>
